@@ -1,0 +1,137 @@
+<!-- aa html and css D* * aapel se kam karta  nathi aetle new code nakhelo se -->
+<section class="section testimonials" id="testimonials" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client <span>Testimonials</span></h2>
+                <p>What our members say about us</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Ultimate Fitness transformed my life. The trainers are knowledgeable and supportive, and the community keeps me motivated. I've lost 30lbs and gained so much confidence!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Client 1">
+                        <div class="author-info">
+                            <h4>Jessica Parker</h4>
+                            <span>Member for 2 years</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The best decision I ever made was joining Ultimate Fitness. The facilities are top-notch, and the trainers helped me prepare for my first marathon. Couldn't have done it without them!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Client 2">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Member for 1 year</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"After trying several gyms, I finally found my fitness home at Ultimate Fitness. The variety of classes keeps me engaged, and I've made so many friends in the community."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client 3">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Member for 3 years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testo section end -->
+
+    <!-- Testo css st -->
+     .testimonials-slider {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+}
+
+.testimonials-slider::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.testimonial-card {
+    min-width: 350px;
+    background-color: var(--dark-light);
+    border-radius: 10px;
+    padding: 30px;
+    scroll-snap-align: start;
+}
+
+.testimonial-content {
+    margin-bottom: 20px;
+}
+
+.rating {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    position: relative;
+}
+
+.testimonial-content p::before,
+.testimonial-content p::after {
+    content: '"';
+    font-size: 24px;
+    color: var(--primary-color);
+    opacity: 0.5;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.author-info span {
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
